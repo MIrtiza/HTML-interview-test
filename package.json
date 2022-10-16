@@ -1,0 +1,17 @@
+{
+  "name": "spiralyze-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass -w assets/style/style.scss assets/css/style.css"
+  },
+  "author": "mirza irtiza",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1",
+    "node-sass": "^7.0.3",
+    "slick-carousel": "^1.8.1"
+  }
+}
