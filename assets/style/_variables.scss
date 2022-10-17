@@ -7,23 +7,15 @@
 
 $primary: #5BC8AF;
 $secondary: #A29366;
-$success: #51284F;
-$info: #0A3D2F;
-
-$darkBlue: #243453;
+$danger: #FF7777;
+$darkgreen: #194D44;
 
 $white: #ffffff;
 $black: #000000;
 $grey: #333333;
-$lightGrey : #8b8b8b;
-$brownbg: #f2f0e9;
-$backSecondary: #f4f3ed;
-// calender color
-$CaLightGrey: #a8afbc;
-$CaMidGrey: #939698;
-$CaDarkGrey: #7d8597;
-$CaGolden: #a19264;
-$blackish : #a7a7a7;
+$lightGrey : #F5F5F5;
+
+
 
 
 /* -------End Of Website Color Branding-------- */
@@ -37,8 +29,6 @@ $theme-colors: map-merge(
                 (
                         "primary": $primary,
                         "secondary": $secondary,
-                        "success": $success,
-                        "darkBlue": $darkBlue,
                         "white": $white,
                         "black": $black,
                         "grey": $grey,
@@ -47,8 +37,8 @@ $theme-colors: map-merge(
                 $theme-colors
 );
 
-$font-family-base: 'corporate-s-regular', sans-serif;
-$headings-font-family: 'corporate-s-bold', sans-serif;
+$font-family-base:'Montserrat', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
 $headings-color: $grey;
 
 $slick-font-path: "/assets/fonts/";

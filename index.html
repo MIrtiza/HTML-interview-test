@@ -45,7 +45,7 @@
   </header>
   <main>
     <section class="main-banner">
-      <div class="bgImg" style="background-image: url('assets/images/bg.png')">
+      <div class="bgImg">
         
       </div>
       <div class="container">
@@ -64,36 +64,59 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 p-0">
               <div class="contact-card">
                   <h4>Contact Us</h4>
-                  <form>
+                  <form onsubmit="event.preventDefault(); return validateForm(this);">
                     <div class="input-field">
-                      <div>
-                        
-                        <input type="text" class="form-control" id="firstname">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="firstname" placeholder="firstname">
                         <label for="firstname" class="form-label">First Name</label>
+                        <div class="error">
+                          <i class="icon-arrowtop"></i>
+                          <span>
+                            This field can’t be empty. Please fill it in.
+                          </span>
+                        </div>
                       </div>
                     </div>
+
                     <div class="input-field">
-                      <div>
-                        
-                        <input type="text" class="form-control" id="lastname">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="lastname" placeholder="lastname">
                         <label for="lastname" class="form-label">Last Name</label>
+                        <div class="error">
+                          <i class="icon-arrowtop"></i>
+                          <span>
+                            This field can’t be empty. Please fill it in.
+                          </span>
+                        </div>
                       </div>
                     </div>
+
                     <div class="input-field">
-                      <div>
-                        
-                        <input type="text" class="form-control" id="email">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Business Email">
                         <label for="email" class="form-label">Business Email</label>
+                        <div class="error">
+                          <i class="icon-arrowtop"></i>
+                          <span>
+                            This field can’t be empty. Please fill it in.
+                          </span>
+                        </div>
                       </div>
                     </div>
+
                     <div class="input-field">
-                      <div>
-                      
-                        <input type="text" class="form-control" id="compay">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="company" placeholder="Company">
                         <label for="company" class="form-label">Company</label>
+                        <div class="error">
+                          <i class="icon-arrowtop"></i>
+                          <span>
+                            This field can’t be empty. Please fill it in.
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <div class="input-field w-100">
@@ -106,7 +129,7 @@
                     </div>
                     <div class="input-field w-100">
                       <div class="button-wrap">
-                        <button class="btn btn-link">Submit</button>
+                        <button class="btn btn-link" type="submit"> <i class="icon-arraow-split"></i> Submit</button>
                       </div>
                     </div>
                     
@@ -116,6 +139,303 @@
         </div>
       </div>
     </section>
+    <section class="older-adults-sec">
+      <div class="container">
+          <div class="row d-none d-lg-block">
+            <div class="col-lg-4">
+              <div class="imgWrap">
+                <img src="assets/images/adult1.png" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="imgWrap">
+                <img src="assets/images/adult2.png" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="imgWrap">
+                <img src="assets/images/adult3.png" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="sub-heading">
+                <h2>
+                  <span>WE</span>
+                  UNDERSTAND
+                  <i class="line"></i>
+                </h2>
+                
+              </div>
+               
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <p>
+                Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of 
+                purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <p>
+                Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and 
+                quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <p>
+                To stimulate social contacts, neighborhood initiatives can be developed. 
+                Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.
+              </p>
+              <a class="btn btn-primary">92% Success Rate <i class="icon-Arrow-Stroke"></i> </a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="testimonial-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="testimonial-slider">
+                <div>
+                  <div class="slide-card">
+                 
+                    <div class="imgWrap">
+                        <img src="assets/images/testimonial1.png" alt="testimonial item" />
+                    </div>
+                    <div class="slide-detail">
+                      <i class="icon-quote-icon"></i>
+                      <h5>Abbie Harvey</h5>
+                      <h6>
+                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of 
+                        me being there for appointments. Older people need attention, love and care that they truly deserve.
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="slide-card">
+                    <div class="imgWrap">
+                        <img src="assets/images/testimonial1.png" alt="testimonial item" />
+                    </div>
+                    <div class="slide-detail">
+                      <i class="icon-quote-icon"></i>
+                      <h5>Abbie Harvey</h5>
+                      <h6>
+                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of 
+                        me being there for appointments. Older people need attention, love and care that they truly deserve.
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="slide-card">
+                    <div class="imgWrap">
+                        <img src="assets/images/testimonial1.png" alt="testimonial item" />
+                    </div>
+                    <div class="slide-detail">
+                      <i class="icon-quote-icon"></i>
+                      <h5>Abbie Harvey</h5>
+                      <h6>
+                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of 
+                        me being there for appointments. Older people need attention, love and care that they truly deserve.
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                  
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="organize-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="sub-heading">
+              <h2>
+                <span>WE </span>
+                CAN ORGANIZE EVERYTHING
+                 <i class="line"></i>
+              </h2>
+          
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <h6>
+              <span>Interventions </span>
+               should focus on older adult’s desire for connectedness, participation and independence.
+            </h6>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al. was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions targeted at older people residing in the community or institutionalised settings. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <a class="btn btn-white">
+              Needs Assessment
+              <i class="icon-info"></i>
+              <div class="info">
+                <i class="icon-arrowtop"></i>
+                <span>
+                  We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a class="btn btn-white">
+              Treatment Planning & Placement
+              <i class="icon-info"></i>
+              <div class="info">
+                <i class="icon-arrowtop"></i>
+                <span>
+                  We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a class="btn btn-white">
+              Transportation & Logistics
+              <i class="icon-info"></i>
+              <div class="info">
+                <i class="icon-arrowtop"></i>
+                <span>
+                  We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a class="btn btn-white">
+              Insurance Advocacy
+              <i class="icon-info"></i>
+              <div class="info">
+                <i class="icon-arrowtop"></i>
+                <span>
+                  We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a class="btn btn-white">
+              Employment Advocacy
+              <i class="icon-info"></i>
+              <div class="info">
+                <i class="icon-arrowtop"></i>
+                <span>
+                  We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a class="btn btn-white">
+              Aftercare Planning
+              <i class="icon-info"></i>
+              <div class="info">
+                <i class="icon-arrowtop"></i>
+                <span>
+                  We’re experienced in our individual crafts and understand how each one of our roles impacts your plan holistically.
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="watch-video-sec">
+      <div class="bg-img"></div>
+        <div class="container-fluid p-0">
+          <div class="row m-0">
+            <div class="col-lg-7 p-0">
+              <div class="watch-detail">
+                <h3>
+                  <span>Watch</span>
+                  The Video
+                </h3>
+                <ul>
+                  <li>
+                    <h5>Needs Assessment</h5>
+                    <h6>The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program. </h6>
+                  </li>
+                  <li>
+                    <h5>Needs Assessment</h5>
+                    <h6>The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program. </h6>
+                  </li>
+                  <li>
+                    <h5>Needs Assessment</h5>
+                    <h6>The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program. </h6>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 p-0">
+              <div class="watch-side">
+                <div class="playvideo">
+                  <a href="#">
+                    <i class="icon-play-icon"></i>
+                  </a>
+              </div>
+              <div class="imgWrap">
+                <img src="assets/images/logo.png" />
+              </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <p>
+              @2021 Get an Intervention Inc. All rights reserved.
+            </p>
+          </div>
+          <div class="col-lg-6">
+              <ul class="footer-links">
+                <li>
+                 <p>
+                  <a href="javascript:">Privacy Policy</a>
+                 </p> 
+                </li>
+                <li>
+                  <p>
+                    <a href="javascript:">Terms of use</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="javascript:">Site Map</a>
+                  </p>
+                 
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 
   <script src="node_modules\jquery\dist\jquery.slim.js"></script>

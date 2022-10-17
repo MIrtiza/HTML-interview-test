@@ -1,7 +1,7 @@
 .main-banner{
     padding: rem(127) 0 rem(60) 0;
-    // background: linear-gradient(180deg, #194D41 0%, rgba(25, 77, 65, 0.7) 100%);
     position: relative;
+    // height: 70vh;
     &:before{
         content: '';
         position: absolute;
@@ -12,17 +12,7 @@
         height: 100%;
         background: linear-gradient(180deg, #194D41 0%, rgba(25, 77, 65, 0.7) 100%);
     }
-    &:after{
-        // content: '';
-        // position: absolute;
-        // bottom: 0;
-        // left: 0;
-        // width: 100%;
-        // height: rem(110);
-        // background-image: url(../images/pattern1.png);
-        // background-repeat: no-repeat;
-        // z-index: 9;
-    }
+  
     .bgImg{
         position: absolute;
         width: 100%;
@@ -31,6 +21,7 @@
         left: 0;
         background-repeat: no-repeat;
         background-size: 100%;
+        background-image: url('../images/bg.png');
         &:before{
             content: '';
             position: absolute;
@@ -48,20 +39,17 @@
 .bannerDetail{
     position: relative;
     z-index: 2;
-    h1{
-        span{
-            
-        }
-    }
+    margin-top: rem(32);
     p{
         color: $white;
+        text-align: center;
     }
 }
 
 .contact-card{
     position: relative;
     z-index: 2;
-    padding: rem(51) rem(28);
+    padding: rem(60) rem(28) rem(32) rem(28);
     border-radius: rem(12);
     background: linear-gradient(180deg, #2A7D6C 0%, rgba(62, 105, 96, 0.62) 100%);
 
@@ -70,9 +58,10 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-left: rem(26);
     h4{ 
         color: $white;
-        margin-bottom: rem(34);
+        margin-bottom: rem(42);
     }
 
     form{
@@ -83,44 +72,110 @@
             width: 50%;
             padding: 0 rem(10);
             margin-bottom: rem(16);
-            & > div{
+            & > .form-floating{
                 position: relative;
             }
             label{
                 position: absolute;
-                left: rem(16);
+                left: 0;
                 top: 0;
-                bottom: 0;
-                height: fit-content;
+                // bottom: 0;
+                // height: fit-content;
                 margin: auto;
                 color: $white;
                 transition: all 0.35s ease;
+                padding: rem(10) rem(10) 0 rem(10);
+                height: auto;
+                width: auto;
             }
+            .form-control{
+                height: rem(48);
+                &::placeholder {
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                 }
+                //  &:focus + .form-label {
+                //     // font-size: 0.875rem;
+                //     font-weight: 400;
+                //     top: -0.65rem;
+                //     left: 0.75rem;
+                //     z-index: 5;
+                //  }
+                //  &:not(:placeholder-shown).form-control {
+                //     &:not(:focus) + .form-label {
+                //     //    font-size: 0.875rem;
+                //        font-weight: 400;
+                //        top: -0.65rem;
+                //        left: 0.75rem;
+                //        z-index: 5;
+                //     }
+                //  }
 
+            }
             .button-wrap{
-                margin-top: rem(41);
+                margin-top: rem(30);
             }
         }
        
     }
 }
 
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+     opacity: 1;
+    transform: scale(0.85) translateY(-1.0rem) translateX(0.15rem);
+    background-color: #2A7D6C;
+    padding-top: rem(3);
+}
+
+.error{
+    padding: rem(12) rem(16);
+    position: absolute;
+    bottom: rem(-75);
+    background-color: $danger;
+    border-radius: rem(10);
+    z-index: 9;
+    display: none;
+    i{
+        position: absolute;
+        top: rem(-9);
+        left: 0;
+        right: 0;
+        font-size: rem(10);
+        &:before{
+            color: $danger;
+        }
+    }
+    span{
+        display: inline-block;
+        text-align: left;
+        font-size: rem(13);
+        color: $white;
+        line-height: 20px;
+    }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    .contact-card{
-        form{
-            input{
-                    &:focus + .form-label {
-                        top: rem(-8);
-                        padding: 0 rem(6);
-                        margin: 0;
-                        left: 0.75rem;
-                        z-index: 5;
-                        background-color: #2A7D6C;
-                     }
-                
-            }
-        }
-
+   
 }
+@media (min-width: 992px) and (max-width: 1199.98px){
+    
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    
+}
+@media (min-width: 575.98px) and (max-width: 767.98px){
+    
+}
+@media (max-width: 575.98px){
+    .main-banner{
+        padding: rem(62) 0 rem(170) 0;
+        .bgImg{
+            // background-size: cover;
+            background-image: url('../images/banner-mob.png');
+        }
+    }
+    .contact-card{
+        margin: auto;
+    }
 }
